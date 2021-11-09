@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>fun with strings</title>
-    <script src="script.js"></script>  
+    <!-- <script src="script.js"></script>   -->
 </head>
 
 <body>
     <h1>fun with strings</h1>
     <div>
-        <label>highReverse</label>
-        <input id="highReverse">
-        <button onclick="highReverseClick()">Upper Reverse</button>
-        <p id="highReverseOutput"></p>
+        Only this year<input type="checkbox">
     </div>
     <script>
         // function highReverse(input) {
@@ -25,6 +22,11 @@
             const input = document.getElementById('highReverse').value;
             document.getElementById('highReverseOutput').innerText = highReverse(input);
         }
+        fetch('flights.json?year=2021')
+            .then(response => response.json())
+            .then(flight => {
+                console.log(flight)
+            })
     </script>
 </body>
 
