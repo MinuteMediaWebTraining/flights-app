@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fun with strings</title>
+    <script src="script.js"></script>  
+</head>
+
+<body>
+    <h1>fun with strings</h1>
+    <div>
+        <label>highReverse</label>
+        <input id="highReverse">
+        <button onclick="highReverseClick()">Upper Reverse</button>
+        <p id="highReverseOutput"></p>
+    </div>
+    <script>
+        // function highReverse(input) {
+        //     const reversed = input.split('').reverse().join('');
+        //     return reversed.toUpperCase();
+        // }
+
+        function highReverseClick() {
+            const input = document.getElementById('highReverse').value;
+            document.getElementById('highReverseOutput').innerText = highReverse(input);
+        }
+    </script>
+</body>
+
+</html>
