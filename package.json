@@ -1,0 +1,27 @@
+{
+  "name": "flights-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvalbl/flights-app.git"
+  },
+  "keywords": [
+    "flights"
+  ],
+  "author": "Yuval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuvalbl/flights-app/issues"
+  },
+  "homepage": "https://github.com/yuvalbl/flights-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
